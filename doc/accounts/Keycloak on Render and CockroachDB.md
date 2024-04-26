@@ -166,4 +166,14 @@ Don't worry those are normal (if anyone knows how to fix them let me know!)
 
 ![access link](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/access%20link.png?raw=true)
 
+If all is working you should see this
 
+![keycloak not found](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/keycloak%20not%20found.png?raw=true)
+
+Don't worry this is normal! You need to go to /auth/admin to access your dashboard:
+
+![auth admin](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/auth%20admin.png?raw=true)
+
+Use the password from `ADMIN_PASSWORD` above to log in, and if all is working you should see 
+
+![keycloak homepage](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/keycloak%20homepage.png?raw=true)
