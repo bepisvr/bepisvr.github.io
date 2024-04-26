@@ -3,7 +3,7 @@ The configuration can be done for free, but I recommend getting the $7 a month f
 # CockroachDB setup
 This is the database that will hold user credential data (login info). No credit card is needed, and the free tier should be plenty for thousands of users.
 
-1. Create an account at [cockroachlabs.cloud]
+1. Create an account at [https://cockroachlabs.cloud/](https://cockroachlabs.cloud/)
 2. Fill out the survey, most options don't matter
 3. Choose PostgreSQL
 
@@ -55,6 +55,8 @@ curl --create-dirs -o $HOME/.postgresql/root.crt 'https://cockroachlabs.cloud/cl
 
 Copy the `https://cockroachlabs.cloud/clusters/aaaaaaaa-bbbb-cccc-dddd-fafafafafafa/cert` part for later
 
+
+
 # Log in with google setup (optional)
 
 If you want to let users log in with their google accounts (as an alternative to username + email + password):
@@ -77,7 +79,7 @@ If you want to let users log in with their google accounts (as an alternative to
 
 ![app name and support email](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/app%20name%20and%20support%20email.png?raw=true)
 
-5. 
+5. Set the app homepage (from the section above)
 
 # Keycloak Setup
 
