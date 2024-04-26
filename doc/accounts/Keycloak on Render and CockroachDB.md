@@ -152,7 +152,7 @@ Now it should look something like this
 
 ![deploying](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/deploying.png?raw=true)
 
-If you did everything right, your KeyCloak instance should be up and running! It may take 3-5 minutes to build, so wait for a green check mark.
+If you did everything right, your KeyCloak instance should be up and running!
 
 You'll probably see lots of warnings like 
 
@@ -162,7 +162,7 @@ BaseServer.NioConnection.readPeerAddress(): cookie read by 10.202.101.222:34242 
 
 Don't worry those are normal (if anyone knows how to fix them let me know!)
 
-10. After 5-10 minutes you should get a green check mark, and you can access your server by clicking at the link in the top left
+10. After 5-10 minutes it should finish setting up, and you should get a green `Live`. Now you can access your server by clicking at the link in the top left
 
 ![access link](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/access%20link.png?raw=true)
 
