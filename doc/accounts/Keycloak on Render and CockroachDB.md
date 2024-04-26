@@ -83,3 +83,87 @@ If you want to let users log in with their google accounts (as an alternative to
 
 # Keycloak Setup
 
+Keycloak is open-source software used for managing user accounts. It will connect to our render server (see above).
+
+The Keycloak server will need to be hosted somewhere, render is a cheap option (free option is available, or $7 a month for 24-7 uptime)
+
+1. Register a render account at [https://dashboard.render.com/register](https://dashboard.render.com/register) or login if you already have an account at [https://dashboard.render.com/login](https://dashboard.render.com/login)
+
+2. Click on `New+` `Web Service`
+
+![new web service](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/new%20web%20service.png?raw=true)
+
+3. Select `Build and deploy from a Git repository` and `Next`
+
+![from git repo](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/from%20git%20repo.png?raw=true)
+
+
+4. Scroll down to the `Public Git repository` field and enter
+
+```
+https://github.com/bepisvr/bepisvr-keycloak
+```
+
+then press continue
+
+(Optional: Fork the repository and use your github account's version)
+
+![public git repo](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/public%20git%20repo.png?raw=true)
+
+5. Pick some `Name` (this will be part of the url where your service is hosted) and a `Region` close to you. Make sure Runtime is `Docker`, select `Free`
+
+![keycloak settings](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/keycloak%20settings.png?raw=true)
+
+6. We need to add environment variables:
+
+- add a `PORT` and set it to `8443` (this is very important!)
+- add a `ADMIN` and set it to `admin` (this is the username for your admin account in keycloak)
+- add a `ADMIN_PASSWORD` and set it to a password you generate (this is the admin account's password in keycloak)
+- add a `DOMAIN_NAME` and set it to your app name with a `.onrender.com` at the end. For example, my app name is `my-keycloak-service` so I put `my-keycloak-service.onrender.com`
+
+![env variables port admin and domain](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/env%20variables%20port%20admin%20and%20domain.png?raw=true)
+
+7. Add environment variables from CockroachDB (above):
+
+- `DB_USERNAME` is your CockroachDB's username
+- `DB_URL` is the url to your CockroachDB's database
+- `DB_DATABASE` is which CockroachDB's database to use (defaultdb is fine)
+- `DB_PORT` is the CockroachDB's port
+
+![cockroach db labeled env vars](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/labeled%20cockroach%20db%20params.png?raw=true)
+
+It should something like this:
+
+![cockroach db env params](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/cockroach%20db%20env%20params.png?raw=true)
+
+8. We need a few more, add:
+
+- `DB_SCHEMA` which should just be `public`
+- `DB_PASSWORD` which is the password you generated on CockroachDB's website earlier
+- `CERT_PATH` which is the path you got from here
+
+![cert info](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/cert%20info.png?raw=true)
+
+Now it should look something like this
+
+![final env args](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/final%20env%20args.png?raw=true)
+
+9. Now press `Create Service`! You should see something like this
+
+![deploying](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/deploying.png?raw=true)
+
+If you did everything right, your KeyCloak instance should be up and running! It may take 3-5 minutes to build, so wait for a green check mark.
+
+You'll probably see lots of warnings like 
+
+```
+BaseServer.NioConnection.readPeerAddress(): cookie read by 10.202.101.222:34242 does not match own cookie; terminating connection
+```
+
+Don't worry those are normal (if anyone knows how to fix them let me know!)
+
+10. After 5-10 minutes you should get a green check mark, and you can access your server by clicking at the link in the top left
+
+![access link](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/access%20link.png?raw=true)
+
+
