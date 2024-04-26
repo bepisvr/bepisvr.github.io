@@ -132,7 +132,7 @@ then press continue
 
 ![cockroach db labeled env vars](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/labeled%20cockroach%20db%20params.png?raw=true)
 
-It should something like this:
+It should look something like this:
 
 ![cockroach db env params](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/cockroach%20db%20env%20params.png?raw=true)
 
