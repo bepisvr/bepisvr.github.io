@@ -46,5 +46,5 @@ To test the connection you must first configure an e-mail address for the curren
 
 Control click it to open that up in a new tab, set the email to your email, and click save (you may need to delete a test user you made if it uses the same email: Users->click on the three dots->Delete)
 
-![set from email realm](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/set%20from%20email%20realm.png?raw=true)
+![keycloak set admin settings](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/keycloak%20set%20admin%20settings.png?raw=true)
 
