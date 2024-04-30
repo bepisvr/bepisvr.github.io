@@ -124,4 +124,5 @@ Now enter some values for a test user (it doesn't matter what), and press `Regis
 Now KeyCloak is all setup!
 
 Next, there are some optional steps:
-- [Log in with google support](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/Keycloak%20Login%20with%20Google.md)
+- [Enable login in with google support](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/Keycloak%20Login%20with%20Google.md)
+- [Setup email confirmation](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/Keycloak%20Email%20Confirmation.md)
