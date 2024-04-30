@@ -1,5 +1,5 @@
 
-Before this, you'll need to [setup](https://bepisvr.github.io/doc/accounts/Keycloak%20on%20Render%20and%20CockroachDB.md) Keycloak on Render, attached to a database.
+Before this, you'll need to [setup](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/Keycloak%20on%20Render%20and%20CockroachDB.md) Keycloak on Render, attached to a database.
 
 # Frontend setup
 
