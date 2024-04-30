@@ -202,5 +202,20 @@ The press `Create`
 
 ![add google provider](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/add%20google%20provider.png?raw=true)
 
-14. To test if it's working, go to your static site, and click "Login" (register won't use google)
+14. We need to add that Redirect URI to our Oauth 2.0 Client ID. To do this, Click on `Credentials` in the google developer console and click on the client id we created
 
+![modify client id](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/modify%20client%20id.png?raw=true)
+
+Add that `Redirect URI` to the list
+
+![authorized redirect uris add](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/authorized%20redirect%20uris%20add.png?raw=true)
+
+15. To test if it's working, go to your static site, and click "Login" (register won't use google). You should see something like this
+
+![google login screen](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/google%20login%20screen.png?raw=true)
+
+Login with one of your test google accounts.
+
+16. Now go back to the Keycloak admin dashboard, select the `users` realm, and click on `Users`. If all is working you should see that gmail there
+
+![see google user](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/see%20google%20user.png?raw=true)
