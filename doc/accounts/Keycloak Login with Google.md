@@ -89,3 +89,13 @@ Login with one of your test google accounts.
 16. Now go back to the Keycloak admin dashboard, select the `users` realm, and click on `Users`. If all is working you should see that gmail there
 
 ![see google user](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/see%20google%20user.png?raw=true)
+
+17. Optional: If you want to make users that login with google automatically verify their email (since they had to use it to log in), you can do this by going to `identity providers` and clicking on `google`:
+
+![select google identity provider](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/select%20google%20identity%20provider.png?raw=true)
+
+In the settings tab, scroll down until you see `Trust Email`. Enable that
+
+![trust email gmail](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/trust%20email%20gmail.png?raw=true)
+
+You can test that this is working by registering a new user with gmail, going to `users` and clicking on that user, and under `details`, `Email verified` should be set to `Yes`
