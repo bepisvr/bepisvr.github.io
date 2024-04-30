@@ -55,33 +55,7 @@ curl --create-dirs -o $HOME/.postgresql/root.crt 'https://cockroachlabs.cloud/cl
 
 Copy the `https://cockroachlabs.cloud/clusters/aaaaaaaa-bbbb-cccc-dddd-fafafafafafa/cert` part for later
 
-
-
-# Log in with google setup (optional)
-
-If you want to let users log in with their google accounts (as an alternative to username + email + password):
-
-1. [Create a new project in the google developer console](https://console.cloud.google.com/projectcreate). Any project name is fine, press Create.
-
-(Make sure you are logged into the Google account that will administrate this, you can change that in the top left)
-
-![create google project](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/create%20google%20project.png?raw=true)
-
-2. Make sure your project is selected in the drop down in the top left, then click on the menu in the top left, `APIs & Services` and `OAuth consent screen`
-
-![oauth consent screen](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/oauth%20consent%20screen.png?raw=true)
-
-3. Select `External` and press `Create`
-
-![create external oauth](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/create%20external%20oauth.png?raw=true)
-
-4. Set the app name (can be anything) and support email (can be yours)
-
-![app name and support email](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/app%20name%20and%20support%20email.png?raw=true)
-
-5. Set the app homepage (from the section above)
-
-# Keycloak Setup
+# Keycloak Server Setup
 
 Keycloak is open-source software used for managing user accounts. It will connect to our render server (see above).
 
@@ -177,3 +151,6 @@ Don't worry this is normal! You need to go to /auth/admin to access your dashboa
 Use the password from `ADMIN_PASSWORD` above to log in, and if all is working you should see 
 
 ![keycloak homepage](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/keycloak%20homepage.png?raw=true)
+
+Now you are ready to [Configure Keycloak](https://bepisvr.github.io/doc/accounts/Configure Keycloak.md)
+
