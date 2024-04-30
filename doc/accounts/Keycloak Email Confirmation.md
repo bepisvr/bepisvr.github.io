@@ -58,6 +58,6 @@ Control click it to open that up in a new tab, set the email to your email, and 
 
 ![verify email enable](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/verify%20email%20enable.png?raw=true)
 
-Now "verify my email" emails should be sent whenever new users sign up! You can test this by registering a new user (via the static website), confirming the email.
+Now "verify my email" emails should be sent whenever new users sign up! You can test this by registering a new user (via the static website), and opening the received email and clicking the confirm link.
 
 Then to check if it is verified, go to the Keycloak dashboard -> users realm -> Users, click on the user -> Details, and you should see Email Verified as Yes.
