@@ -83,11 +83,32 @@ It should look like this
 https://bepis-vr.onrender.com
 ```
 
-but yours will be different.
+but yours will be different. Then press `Save`.
 
 ![create client login settings](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/create%20client%20login%20settings.png?raw=true)
 
-8. 
+8. Wait 10-20 seconds for the changes to go through, and you should be redirected to a page like this:
+
+![successful create client](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/successful%20create%20client.png?raw=true)
+
+If you don't get redirected, you may have been too slow. Because you are using the free version this might hang because your server was spun down, refresh to make it automatically spin up again and try doing it faster this time.
+
+To double check your client exists, you can also go the `Clients` menu (make sure you have the `users` realm selected)
+
+![client exists](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/client%20exists.png?raw=true)
+
+9. By default KeyCloak requires you to manually create each user account. We want users to be able to create their own accounts. To enable this:
+- Make sure you are in the `users` realm
+- `Realm Settings`
+- `Login`
+- Enable `User registration`
+
+![need to enable user registration](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/need%20to%20enable%20user%20registration.png?raw=true)
+
+It should redirect you, once it is done loading you should see this
+
+![enabled user registration](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/enabled%20user%20registration.png?raw=true)
+
 
 # Log in with google setup (optional)
 
