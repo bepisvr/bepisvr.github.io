@@ -152,5 +152,5 @@ Use the password from `ADMIN_PASSWORD` above to log in, and if all is working yo
 
 ![keycloak homepage](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/keycloak%20homepage.png?raw=true)
 
-Now you are ready to [Configure Keycloak](https://bepisvr.github.io/doc/accounts/Configure Keycloak.md)
+Now you are ready to [Configure Keycloak](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/Configure%20Keycloak.md)
 
