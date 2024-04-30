@@ -109,6 +109,24 @@ It should redirect you, once it is done loading you should see this
 
 ![enabled user registration](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/enabled%20user%20registration.png?raw=true)
 
+10. Let's test our user auth workflow. Go to the static site and click "Register", you should see a page like this
+
+![register screen](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/register%20screen.png?raw=true)
+
+Now enter some values for a test user (it doesn't matter what), and press `Register`.
+
+![user register values](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/user%20register%20values.png?raw=true)
+
+11. Go back to the admin console, make sure the `users` realm is selected, and click on `Users`. If all went well you should see the user in the list
+
+![user populated](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/user%20populated.png?raw=true)
+
+
+
+# 
+
+
+
 
 # Log in with google setup (optional)
 
@@ -132,4 +150,54 @@ If you want to let users log in with their google accounts (as an alternative to
 
 ![app name and support email](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/app%20name%20and%20support%20email.png?raw=true)
 
-5. Set the app homepage (from the section above)
+5. Set the app homepage to your static site and `Authorized Domains` to your static site and your keycloak service. Add a developer contact information email, then click  `Save and Continue`
+
+![oauth app domain and auth domains](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/oauth%20app%20domains%20and%20auth%20domains.png?raw=true)
+
+6. Click `Add or Remove Scopes` and select `.../auth/userinfo.email` and `openid` then press `Update`
+
+![add oauth scopes](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/add%20oauth%20scopes.png?raw=true)
+
+it should now look like this
+
+![scopes updated](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/scopes%20updated.png?raw=true)
+
+press `Save and Continue`
+
+7. Add some emails to test users that you'll use to test. Click on `Add Users`, enter the emails, then press `Add`
+
+![add test users](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/add%20test%20users.png?raw=true)
+
+![test users added](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/test%20users%20added.png?raw=true)
+
+Now press `Save and Continue`
+
+8. Review that everything looks correct, then press `Back to Dashboard`
+
+![back to dashboard](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/back%20to%20dashboard.png?raw=true)
+
+9. Now we need to create the Oauth client id used in Keycloak. Click `Credentials`, `Create Credentials`, `Oauth client ID`
+
+![create oauth client id](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/create%20oauth%20client%20id.png?raw=true)
+
+10. Set:
+- `Application Type` to `Web Application`
+- `Name` to whatever you want
+- `Authorized Javascript Origins` to the url of your keycloak server (make sure there's no / at the end)
+- `Authorized redirect URIs` to the url of your keycloak server
+
+![create oauth client id fields](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/create%20oauth%20client%20id%20fields.png?raw=true)
+
+The press `Create`
+
+11. Store the Client ID and Client secret for later
+
+![oauth client created](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/oauth%20client%20created.png?raw=true)
+
+12. Go back to your Keycloak Dashboard, select the `users` realm, click `Identity Providers`, and select `Google`
+
+![identity provider google keycloak](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/identity%20providwer%20google%20keycloak.png?raw=true)
+
+13. Leave the Redirect URI as default, and put in the `Client ID` and `Client Secret` from the previous step
+
+![add google provider](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/add%20google%20provider.png?raw=true)
