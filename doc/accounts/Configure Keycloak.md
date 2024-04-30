@@ -152,7 +152,7 @@ If you want to let users log in with their google accounts (as an alternative to
 
 5. Set the app homepage to your static site and `Authorized Domains` to your static site and your keycloak service. Add a developer contact information email, then click  `Save and Continue`
 
-![oauth app domain and auth domains](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/oauth%20app%20domains%20and%20auth%20domains.png?raw=true)
+![oauth app domain and auth domains](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/oauth%20app%20domain%20and%20auth%20domains.png?raw=true)
 
 6. Click `Add or Remove Scopes` and select `.../auth/userinfo.email` and `openid` then press `Update`
 
@@ -198,6 +198,9 @@ The press `Create`
 
 ![identity provider google keycloak](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/identity%20providwer%20google%20keycloak.png?raw=true)
 
-13. Leave the Redirect URI as default, and put in the `Client ID` and `Client Secret` from the previous step
+13. Leave the Redirect URI as default, and put in the `Client ID` and `Client Secret` from the previous step, then press `Add`
 
 ![add google provider](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/add%20google%20provider.png?raw=true)
+
+14. To test if it's working, go to your static site, and click "Login" (register won't use google)
+
