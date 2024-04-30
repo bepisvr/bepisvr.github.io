@@ -196,7 +196,7 @@ The press `Create`
 
 12. Go back to your Keycloak Dashboard, select the `users` realm, click `Identity Providers`, and select `Google`
 
-![identity provider google keycloak](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/identity%20providwer%20google%20keycloak.png?raw=true)
+![identity provider google keycloak](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/identity%20provider%20google%20keycloak.png?raw=true)
 
 13. Leave the Redirect URI as default, and put in the `Client ID` and `Client Secret` from the previous step, then press `Add`
 
