@@ -1,4 +1,4 @@
-The configuration can be done for free, but I recommend getting the $7 a month for more uptime
+The configuration can be done for free, but I recommend upgrading your render.io keycloak server to the $7 a month plan for more uptime
 
 # CockroachDB setup
 This is the database that will hold user credential data (login info). No credit card is needed, and the free tier should be plenty for thousands of users.
