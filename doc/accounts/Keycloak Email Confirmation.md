@@ -30,15 +30,17 @@ You can also enable 2-step verification by clicking on your picture in the top r
 7. In Connection and Authentication, put
 
 - `Host` to `smtp.gmail.com`
-- `Port` to `25`
-- `Encryption` to `Enable SSL`
+- `Port` to `465`
+- `Encryption` to `Enable SSL` and `Enable StartTLS`
 - `Authentication` Enabled
 - `Username` your gmail username
 - `Password` the app password generated above
 
 ![smtp connection](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/smtp%20connection.png?raw=true)
 
-A yellow box will pop up saying
+Press `Save`
+
+8. A yellow box will pop up saying
 
 ```
 To test the connection you must first configure an e-mail address for the current user (admin).
@@ -48,3 +50,6 @@ Control click it to open that up in a new tab, set the email to your email, and 
 
 ![keycloak set admin settings](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/keycloak%20set%20admin%20settings.png?raw=true)
 
+9. Now go back to `Realm Settings` `Email`, scroll down, and press `Test Connection`. You should see a message like this
+
+![successful test email](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/accounts/media/successful%20test%20email.png?raw=true)
