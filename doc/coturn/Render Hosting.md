@@ -41,9 +41,12 @@ Leave `branch` as `main` and `Runtime` as `docker`, `Root directory` should be `
 
 ![create web service](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/coturn/media/create%20web%20service.png?raw=true)
 
-8. Wait for a minute or two, and if all went well, you should see a green checkmark!
+8. Wait for a minute or two, and if all went well, you should see a green `live`! (you may need to refresh a few times)
 
-You may see some errors in the logs, those are okay and don't matter.
+![deploy live](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/coturn/media/deploy%20live.png?raw=true)
 
+You may see these errors in the logs:
 
-TODO: Make a docker image that has everything installed to decrease build times
+![errors not a problem](https://github.com/bepisvr/bepisvr.github.io/blob/main/doc/coturn/media/errors%20not%20a%20problem.png?raw=true)
+
+Those are fine and don't matter.
