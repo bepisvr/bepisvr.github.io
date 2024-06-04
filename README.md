@@ -5,7 +5,9 @@ All the hosting stack is open source too
 
 # Docs
 
-BepisVR is federated. You don't need to follow these tutorials to use Bepis VR! Instead, you can connect to a public instance hosted by someone else.
+BepisVR is federated (though user data is stored locally, federation is only used for user/world discovery, see [Design](https://github.com/bepisvr/bepisvr.github.io/tree/main/thoughts/Design.md)).
+
+You don't need to follow these tutorials to use Bepis VR! Instead, you can connect to a public instance hosted by someone else.
 
 These tutorials are if you want to host your own instance.
 
