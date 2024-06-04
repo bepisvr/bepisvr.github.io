@@ -2,7 +2,7 @@ In order to establish connections, most network configurations require a signali
 
 About 90% of the time, this signaling server should only be needed for initial handshaking, and then users can communicate peer-to-peer. (This handshaking uses a protocol known as STUN)
 
-10% of the time, this doesn't work, and all traffic will be forwarded through the server. (This uses a protocol known as TURN)
+10% of the time (depends on networking configuration), this doesn't work, and all traffic will be forwarded through the server. (This uses a protocol known as TURN)
 
 Deciding which protocol to use is done by a protocol called ICE.
 
