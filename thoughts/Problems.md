@@ -76,6 +76,22 @@ There are a few problems to solve:
 
 
 
+
+General infra:
+- User inventory stored locally initially
+  - Steam cloud sync lets it be saved
+  - Sharing stuff just copies contents
+- Worlds are hosted by a specific user (or headless)
+  - Anyone else P2P connects to them
+- Worlds are discovered how?
+  - When hosting a world, if make it public world you can choose for it to "belong" to an instance you are a part of
+    - Anyone browing that instance (or instances they federate with) can then see that instance as public
+  - Anyone in your contacts?
+  - TODO: more thinking
+  - The purpose of instances is only for this discoverability
+    - Instances also 
+
+
 CockroachDB seems like a good option for scaling the server to many users
 
 Matrix (in particular, conduwuit) seems like a good option for 
