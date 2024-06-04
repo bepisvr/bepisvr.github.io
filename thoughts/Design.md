@@ -11,7 +11,7 @@ Local (in a directory, can sync via steam cloud/dropbox/etc.)
 
 Federated:
 - P2P Signaling Server (coturn, tho any other STUN+TURN+ICE should work)
-   - steam is alterantive for P2P connection provider
+    - Steam is alterantive for P2P connection provider
 - Discovery:
     - Public World Discovery
     - Lists of users (a user can be registered at multiple instances)
@@ -21,10 +21,10 @@ Federated:
 HTTP/FTP/Git/Dropbox/GDrive/IPFS:
 - Meant for persistent data
 - uuid -> username mapping
-   - Use bluesky's system:
-     - User owns a username.domain.etc if there's a file on that domain that says you do
-   - steam is one such provider of uuid -> username mapping
-     - Specifically SteamID (maybe also store steam username?)
+    - Use bluesky's system:
+       - User owns a username.domain.etc if there's a file on that domain that says you do
+    - steam is one such provider of uuid -> username mapping
+       - Specifically SteamID (maybe also store steam username?)
 - Public Folders
 - Cloud Variables
 
